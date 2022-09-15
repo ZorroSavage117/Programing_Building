@@ -1,4 +1,4 @@
-# page set up
+# page spacing
 print()
 
 # vairables 
@@ -12,11 +12,9 @@ name = input("What is your name? \n")
 print(f"Well its nice to meet you, {name}.")
 print("I seem to have a need to ask you what your favorite color is, but first mine is blood red.")
 color = input("And what color do you like? \n")
-#print(f"Your are {name} and you like the color {color}.")
-#print(f"Hi, {name}. I see you a fan of the color {color}, I like that color too.")
 print("That is a lovely color you have chosen.")
 city = input("One last question, what city or place do you recommend to live at? \n")
 print(f"Thank you, {name}. I think I am going to start heading to {city}. \nI think I will paint a wall or two in my place the color of {color}.")
 
-# page set up
+# page spacing
 print()
