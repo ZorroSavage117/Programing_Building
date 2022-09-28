@@ -29,8 +29,10 @@ sqr_area = length1 ** 2
 crl_area = math.pi * (length1 ** 2)
 cube_vol = length1 ** 3
 sphere_vol = (4 / 3) * math.pi * (length1 ** 3)
-print(
-    f"The area of the square is: {sqr_area} \nThe area of the circle is: {crl_area} \nThe volume of the cube is: {cube_vol} \nThe volume of the sphere is: {sphere_vol}")
+print(f"""The area of the square is: {sqr_area}
+The area of the circle is: {crl_area}
+The volume of the cube is: {cube_vol}
+The volume of the sphere is: {sphere_vol}""")
 
 # page set up
 print()
