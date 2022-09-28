@@ -22,7 +22,7 @@ rct_area = length1 * width1
 print(f"The area of the rectangle is: {rct_area}")
 radius1 = float(input("What is the radius of the circle? "))
 crl_area = math.pi * (radius1 ** 2)
-print(f"The are of the circle is: {crl_area}")
+print(f"The area of the circle is: {crl_area}")
 print()
 length1 = float(input("What is the length of a side? "))
 sqr_area = length1 ** 2
