@@ -11,6 +11,7 @@ density = 0
 area = 0
 drag_con = 0
 velocity = 0
+velocity_terminal = 0
 
 # main code
 # inputs
@@ -25,13 +26,17 @@ drag_con = float(input("Drag constant (0.5 for sphere, 1.1 for cylinder): "))
 print()
 
 # calculations
-cat = float((1/2) * density * area * drag_con)
-velocity = float(math.sqrt((mass * gravity) / cat) * (1 -
-                 math.exp((-math.sqrt(mass * gravity * cat) / mass) * time)))
+cat = ((1/2) * density * area * drag_con)
+velocity = math.sqrt((mass * gravity) / cat) * (1 -
+                                                math.exp((-math.sqrt(mass * gravity * cat) / mass) * time))
+velocity_terminal = math.sqrt((mass * gravity) / cat)
 
+# outputs
 print(f"""The inner value of c is: {"{:.3f}".format(cat)}""")
 print(
-    f"""The velocity after 10.0 seconds is: {"{:.3f}".format(velocity)} m/s""")
+    f"""The velocity after {time} seconds is: {"{:.3f}".format(velocity)} m/s""")
+print(
+    f"""The terminal velocity is: {"{:.3f}".format(velocity_terminal)} m/s""")
 
 # page set up
 print()
