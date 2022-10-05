@@ -27,9 +27,9 @@ print()
 
 # calculations
 cat = ((1/2) * density * area * drag_con)
-velocity = math.sqrt((mass * gravity) / cat) * (1 -
-                                                math.exp((-math.sqrt(mass * gravity * cat) / mass) * time))
 velocity_terminal = math.sqrt((mass * gravity) / cat)
+velocity = velocity_terminal * \
+    (1 - math.exp((-math.sqrt(mass * gravity * cat) / mass) * time))
 
 # outputs
 print(f"""The inner value of c is: {"{:.3f}".format(cat)}""")
