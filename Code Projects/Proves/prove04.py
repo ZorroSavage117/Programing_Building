@@ -9,6 +9,9 @@ num_child = 0
 num_adult = 0
 tax_rate = 0.00
 tip = ""
+desert = ""
+desert_price = 0.00
+num_desert = 0
 tip_rate = 0.00
 tip_amount = 0.00
 subtotal = 0.00
@@ -24,13 +27,19 @@ num_child = int(input("How many children are there? "))
 num_adult = int(input("How many adults are there? "))
 tax_rate = float(input("What is the sales tax rate? "))
 tip = input("Whould you like to leave a tip? ")
+desert = input("Did you order desert? ")
 
 if tip.lower() == "yes" or tip.lower() == "y":
     tip_rate = float(input("What is the tip rate? "))
     tip_rate = tip_rate / 100
 
+if desert.lower() == "yes" or desert.lower() == "y":
+    desert_price = float(input("What is the price for the desert? "))
+    num_desert = int(input("How many deserts were ordered? "))
+
 tax_rate = tax_rate / 100
-subtotal = (meal_child * num_child) + (meal_adult * num_adult)
+subtotal = (meal_child * num_child) + (meal_adult *
+                                       num_adult) + (desert_price * num_desert)
 sales_tax = subtotal * tax_rate
 tip_amount = subtotal * tip_rate
 total = subtotal + sales_tax + tip_amount
