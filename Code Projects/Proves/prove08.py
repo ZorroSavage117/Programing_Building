@@ -42,3 +42,16 @@ print(f"it took you {num_guess} guesses.")
 
 # end page
 print()
+
+
+# helpful code from teach
+# my_string = "shit"
+# new_string = ""
+# for letter in my_string:
+#     print(letter)
+# for letter in my_string:
+#     if letter == "s":
+#         new_string += "z"
+#     else:
+#         new_string += letter
+# print(new_string)
