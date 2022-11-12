@@ -37,10 +37,13 @@ while menu_tf:
         # print("Sorry this function not yet coded.")
         # removing
         item = input("Which item would you like to remove? ")
-        y = int(item) - 1
-        cart.pop(y)
-        prices.pop(y)
-        print("Item removed.")
+        if int(item) <= len(cart):
+            y = int(item) - 1
+            cart.pop(y)
+            prices.pop(y)
+            print("Item removed.")
+        else:
+            print("Sorry, that is not a valid item number.")
     elif menu_select == "4" or menu_select.lower() == "compute total":
         # print("Sorry this function not yet coded.")
         # price total
