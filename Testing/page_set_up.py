@@ -4,6 +4,9 @@ print()
 # varaibles
 
 
+# functions
+
+
 # main code
 
 
